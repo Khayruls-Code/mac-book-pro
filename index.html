@@ -9,7 +9,76 @@
 </head>
 <body>
     
-    <h1>This is Khayrul</h1>
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="img-col">
+                    <img src="images/macbook.png" alt="">
+                </div>
+                <div class="info-col">
+                    <div class="title">
+                        <h1>Customize your Blue 24-inch iMac with Apple M1 Chip</h1>
+                        <p>The MacBook is a brand of Macintosh notebook computers designed and marketed by Apple Inc. that use Apple's macOS operating system since 2006. It replaced the PowerBook and iBook brands during the Mac transition to Intel processors, announced in 2005</p>
+                    </div>
+
+                    <!-- memory -->
+                    <div class="instruments">
+                        <h2>Memory</h2>
+                        <button id="memory8GB">8GB unified Memory</button>
+                        <button id="memory16GB">16GB unifide Memory</button>
+                    </div>
+
+                    <!-- storage -->
+                    <div class="instruments">
+                        <h2>Storage</h2>
+                        <button id="SSD256GB">256GB SSD Storage</button>
+                        <button id="SSD512GB">512GB SSD Storage</button>
+                        <button id="SSD1TB">1TB SSD Storage</button>
+                    </div>
+
+                    <!-- Delivery Option -->
+                    <div class="instruments">
+                        <h2>Shoose Your Delivery Option</h2>
+                        <button id="costFree">Friday, Aug 25 FREE Prime Delivery</button>
+                        <button id="withCharge">Friday, Aug 21 Delivery charge $20</button>
+                    </div>
+
+                    <!-- price-table -->
+            <table>
+                <tr>
+                    <td>Best Price</td>
+                    <td>$<span id="bestPrice">1299</span></td>
+                </tr>
+                <tr>
+                    <td>Extra Memory Cost</td>
+                    <td>$<span id="memoryPrice">0</span></td>
+                </tr>
+                <tr>
+                    <td>Extra Storage Cost</td>
+                    <td>$<span id="storagePrice">0</span></td>
+                </tr>
+                <tr>
+                    <td>Delivery Charge</td>
+                    <td>$<span id="deliveryCost">0</span></td>
+                </tr>
+                <tr>
+                    <td>Total Price</td>
+                    <td>$<span id="totalPrice">1299</span></td>
+                </tr>
+            </table>
+
+            <!-- promo -->
+            <div class="promo">
+                <p>Add promo code</p>
+                <input id="codeInput" type="text">
+                <button id="applyBtn">Apply</button>
+            </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <h1 class="mainPrice">Total: $<span id="mainPrice">1299</span></h1>
+    </main>
 
     <script src="app.js"></script>
 </body>

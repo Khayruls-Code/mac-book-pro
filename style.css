@@ -10,3 +10,128 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 3% auto;
+}
+.row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+}
+.img-col{
+    flex: 2;
+}
+.info-col{
+    flex: 3;
+}
+.img-col img{
+    width: 100%;
+}
+
+/* price section */
+
+.title h1{
+    font-size: 2rem;
+    color: #333;
+}
+.title p{
+    font-size: 1rem;
+    color: #555;
+    margin: 15px 0;
+}
+.instruments{
+    margin: 20px 0;
+}
+.instruments h2{
+    font-size: 1.2rem;
+    color: #2c3e50;
+    font-weight: 600;
+    margin: 5px 0;
+}
+.instruments button{
+    padding: 8px;
+    font-size: 1rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.instruments button:focus{
+    background: #0fbcf9;
+    outline: none;
+    color: #fff;
+}
+table{
+    border-collapse: collapse;
+    width: 60%;
+    margin-top: 30px;
+}
+table tr td{
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+    padding: 10px 0;
+}
+table tr td:last-child{
+    text-align: right;
+}
+table tr:nth-child(4){
+    border-bottom: 2px solid #555;
+}
+
+/* promo */
+.promo{
+    margin: 20px 0;
+}
+.promo p{
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+.promo input{
+    padding: 8px;
+    font-size: 1.1rem;
+    border: 1px solid rgba(0,0,0,0.4);
+    outline: none;
+    border-radius: 5px;
+}
+.promo button{
+    padding: 8px 10px;
+    font-size: 1.1rem;
+    background: #0fbcf9;
+    color: #fff;
+    border: 1px solid #0fbcf9;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mainPrice{
+    text-align: center;
+    padding-bottom: 30px;
+    color: crimson;
+    font-size: 2.5rem;
+}
+
+/* responsive */
+@media(max-width:768px){
+    .row{
+        flex-direction: column;
+    }
+    .img-col{
+        text-align: center;
+    }
+    html{
+        font-size: 12px;
+    }
+    .img-col img{
+        width: 80%;
+    }
+    table{
+        width: 90%;
+    }
+}
